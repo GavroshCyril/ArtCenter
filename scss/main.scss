@@ -1,0 +1,34 @@
+@import "variables.scss";
+
+.main {
+  margin-top: 65px;
+  position: relative;
+
+  &__subinfo {
+    margin-top: 30px;
+  }
+  &__span {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: $gothic;
+    color: $grey;
+  }
+  &__title {
+    font-size: 105px;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: $gothic;
+    color: $grey;
+  }
+
+  &__span-info {
+    text-transform: uppercase;
+    color: $grey;
+    transform: rotate(90deg);
+    font-size: 20px;
+    line-height: 29px;
+    position: absolute;
+    right: 0;
+    top: 150px;
+  }
+}

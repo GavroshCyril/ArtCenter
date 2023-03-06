@@ -1,5 +1,6 @@
 @import "variables.scss";
 @import "header.scss";
+@import "main.scss";
 
 * {
   text-decoration: none;
@@ -11,6 +12,7 @@
 
 body {
   background-color: $black;
+  font-family: "AvrileSans-Condensed";
 }
 
 .active {

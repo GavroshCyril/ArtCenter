@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@font-face {
+  font-family: "AvrileSans-Condensed";
+  src: url("/fonts/AvrileSans-Condensed.ttf") format("ttf");
+  font-weight: 400;
+}
+.main {
+  margin-top: 65px;
+  position: relative;
+}
+.main__subinfo {
+  margin-top: 30px;
+}
+.main__span {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Dela Gothic One", cursive;
+  color: #f7f1e3;
+}
+.main__title {
+  font-size: 105px;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: "Dela Gothic One", cursive;
+  color: #f7f1e3;
+}
+.main__span-info {
+  text-transform: uppercase;
+  color: #f7f1e3;
+  transform: rotate(90deg);
+  font-size: 20px;
+  line-height: 29px;
+  position: absolute;
+  right: 0;
+  top: 150px;
+}/*# sourceMappingURL=main.css.map */
