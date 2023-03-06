@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__item {
+  margin-left: 20px;
+}
+.nav__item:first-child {
+  margin-left: 0;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  margin-left: 35px;
+}
+
+.icon:first-child {
+  margin-left: 0;
+}/*# sourceMappingURL=header.css.map */
