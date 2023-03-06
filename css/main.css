@@ -6,6 +6,7 @@
 }
 .main {
   margin-top: 65px;
+  padding-bottom: 60px;
   position: relative;
 }
 .main__subinfo {
@@ -33,4 +34,15 @@
   position: absolute;
   right: 0;
   top: 150px;
+}
+.main__picture {
+  margin-top: 30px;
+  padding-bottom: 60px;
+  position: absolute;
+  right: 100px;
+  width: 386px;
+  height: 371px;
+}
+.main__picture img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
