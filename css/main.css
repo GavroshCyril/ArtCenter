@@ -1,13 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 @font-face {
-  font-family: "AvrileSans-Condensed";
-  src: url("/fonts/AvrileSans-Condensed.ttf") format("ttf");
-  font-weight: 400;
+  font-family: "Avrile Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Regular"), url("../fonts/AvrileSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Medium"), url("../fonts/AvrileSans-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans SemiBold"), url("../fonts/AvrileSans-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Bold"), url("../fonts/AvrileSans-Bold.woff") format("woff");
 }
 .main {
   margin-top: 65px;
   padding-bottom: 60px;
-  position: relative;
 }
 .main__subinfo {
   margin-top: 30px;
@@ -26,20 +44,21 @@
   color: #f7f1e3;
 }
 .main__span-info {
+  position: absolute;
   text-transform: uppercase;
   color: #f7f1e3;
   transform: rotate(90deg);
   font-size: 20px;
   line-height: 29px;
-  position: absolute;
-  right: 0;
-  top: 150px;
+  right: -80px;
+  top: 147px;
+  font-family: "Avrile Sans Regular";
 }
 .main__picture {
   margin-top: 30px;
   padding-bottom: 60px;
   position: absolute;
-  right: 100px;
+  right: 12px;
   width: 386px;
   height: 371px;
 }

@@ -9,12 +9,43 @@ $orange: #ffb142;
 $ocher: #ccaf62;
 $yellow: #ffda79;
 $grey: #f7f1e3;
+$light-grey: #3e3e3e;
+$bold-grey: #737373;
 $white: #ffff;
 $gothic: "Dela Gothic One", cursive;
-$AvrileSansRegular: "AvrileSans-Condensed";
+$AvrileSansRegular: "Avrile Sans Regular";
+$AvrileSansMedium: "Avrile Sans Medium";
+$AvrileSansSemiBold: "Avrile Sans SemiBold";
+$AvrileSansBold: "Avrile Sans Bold";
 
 @font-face {
-  font-family: "AvrileSans-Condensed";
-  src: url("/fonts/AvrileSans-Condensed.ttf") format("ttf");
-  font-weight: 400;
+  font-family: "Avrile Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Regular"),
+    url("../fonts/AvrileSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Avrile Sans Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Medium"),
+    url("../fonts/AvrileSans-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Avrile Sans SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans SemiBold"),
+    url("../fonts/AvrileSans-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Avrile Sans Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Bold"),
+    url("../fonts/AvrileSans-Bold.woff") format("woff");
 }

@@ -1,0 +1,75 @@
+@import "variables.scss";
+
+.exhibitions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &__calendar {
+    width: 386px;
+    height: 423px;
+  }
+  &__calendar img {
+    width: 100%;
+  }
+
+  &__card img {
+    height: 423px;
+  }
+}
+
+.card {
+  position: relative;
+  background: url(../images/Exhibitions-news01.png) center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 800px;
+
+  &__main-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 40px;
+  }
+
+  &__title {
+    display: inline;
+    font-size: 30px;
+    font-family: $gothic;
+    color: $grey;
+    width: 316px;
+    margin: 0;
+    z-index: 5;
+  }
+
+  &__info {
+    text-align: end;
+    z-index: 5;
+    width: 220px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: $AvrileSansSemiBold;
+  }
+}
+
+.card:after {
+  content: "";
+  position: absolute;
+  top: 245px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.arrow {
+  margin-top: 11px;
+}

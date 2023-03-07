@@ -1,15 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 @font-face {
-  font-family: "AvrileSans-Condensed";
-  src: url("/fonts/AvrileSans-Condensed.ttf") format("ttf");
-  font-weight: 400;
+  font-family: "Avrile Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Regular"), url("../fonts/AvrileSans-Regular.woff") format("woff");
 }
 @font-face {
-  font-family: "AvrileSans-Condensed";
-  src: url("/fonts/AvrileSans-Condensed.ttf") format("ttf");
-  font-weight: 400;
+  font-family: "Avrile Sans Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Medium"), url("../fonts/AvrileSans-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans SemiBold"), url("../fonts/AvrileSans-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Bold"), url("../fonts/AvrileSans-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Regular"), url("../fonts/AvrileSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Medium"), url("../fonts/AvrileSans-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans SemiBold"), url("../fonts/AvrileSans-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Bold"), url("../fonts/AvrileSans-Bold.woff") format("woff");
 }
 .navigation {
   display: flex;
@@ -25,7 +64,7 @@
   align-items: center;
 }
 .navigation .nav__item {
-  font-family: "AvrileSans-Condensed";
+  font-family: "Avrile Sans Regular";
   margin-left: 20px;
   transition: 0.3s;
   -webkit-transition: 0.3s;
@@ -51,14 +90,32 @@
 }
 
 @font-face {
-  font-family: "AvrileSans-Condensed";
-  src: url("/fonts/AvrileSans-Condensed.ttf") format("ttf");
-  font-weight: 400;
+  font-family: "Avrile Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Regular"), url("../fonts/AvrileSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Medium"), url("../fonts/AvrileSans-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans SemiBold"), url("../fonts/AvrileSans-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Bold"), url("../fonts/AvrileSans-Bold.woff") format("woff");
 }
 .main {
   margin-top: 65px;
   padding-bottom: 60px;
-  position: relative;
 }
 .main__subinfo {
   margin-top: 30px;
@@ -77,25 +134,119 @@
   color: #f7f1e3;
 }
 .main__span-info {
+  position: absolute;
   text-transform: uppercase;
   color: #f7f1e3;
   transform: rotate(90deg);
   font-size: 20px;
   line-height: 29px;
-  position: absolute;
-  right: 0;
-  top: 150px;
+  right: -80px;
+  top: 147px;
+  font-family: "Avrile Sans Regular";
 }
 .main__picture {
   margin-top: 30px;
   padding-bottom: 60px;
   position: absolute;
-  right: 100px;
+  right: 12px;
   width: 386px;
   height: 371px;
 }
 .main__picture img {
   width: 100%;
+}
+
+@font-face {
+  font-family: "Avrile Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Regular"), url("../fonts/AvrileSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Medium"), url("../fonts/AvrileSans-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans SemiBold"), url("../fonts/AvrileSans-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Bold"), url("../fonts/AvrileSans-Bold.woff") format("woff");
+}
+.exhibitions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.exhibitions__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.exhibitions__calendar {
+  width: 386px;
+  height: 423px;
+}
+.exhibitions__calendar img {
+  width: 100%;
+}
+.exhibitions__card img {
+  height: 423px;
+}
+
+.card {
+  position: relative;
+  background: url(../images/Exhibitions-news01.png) center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 800px;
+}
+.card__main-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 40px;
+}
+.card__title {
+  display: inline;
+  font-size: 30px;
+  font-family: "Dela Gothic One", cursive;
+  color: #f7f1e3;
+  width: 316px;
+  margin: 0;
+  z-index: 5;
+}
+.card__info {
+  text-align: end;
+  z-index: 5;
+  width: 220px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: "Avrile Sans SemiBold";
+}
+
+.card:after {
+  content: "";
+  position: absolute;
+  top: 245px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.arrow {
+  margin-top: 11px;
 }
 
 * {
@@ -116,7 +267,17 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: 1218px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.title {
+  font-size: 40px;
+  line-height: 58px;
+  color: #f7f1e3;
+  font-family: "Dela Gothic One", cursive;
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */

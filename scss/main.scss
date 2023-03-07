@@ -3,7 +3,6 @@
 .main {
   margin-top: 65px;
   padding-bottom: 60px;
-  position: relative;
 
   &__subinfo {
     margin-top: 30px;
@@ -23,21 +22,22 @@
   }
 
   &__span-info {
+    position: absolute;
     text-transform: uppercase;
     color: $grey;
     transform: rotate(90deg);
     font-size: 20px;
     line-height: 29px;
-    position: absolute;
-    right: 0;
-    top: 150px;
+    right: -80px;
+    top: 147px;
+    font-family: $AvrileSansRegular;
   }
 
   &__picture {
     margin-top: 30px;
     padding-bottom: 60px;
     position: absolute;
-    right: 100px;
+    right: 12px;
     width: 386px;
     height: 371px;
   }
