@@ -28,7 +28,7 @@
   padding-bottom: 60px;
 }
 .main__subinfo {
-  margin-top: 30px;
+  padding-top: 30px;
 }
 .main__span {
   text-transform: uppercase;
@@ -55,13 +55,12 @@
   font-family: "Avrile Sans Regular";
 }
 .main__picture {
-  margin-top: 30px;
-  padding-bottom: 60px;
-  /* position: absolute;
-  right: 12px; */
-  width: 386px;
-  height: 371px;
+  padding-top: 30px;
+  margin-bottom: 60px;
+  height: 370px;
 }
 .main__picture img {
-  width: 100%;
+  display: block;
+  height: 100%;
+  margin-left: auto;
 }/*# sourceMappingURL=main.css.map */

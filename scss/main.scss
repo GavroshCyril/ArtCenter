@@ -5,7 +5,7 @@
   padding-bottom: 60px;
 
   &__subinfo {
-    margin-top: 30px;
+    padding-top: 30px;
   }
   &__span {
     text-transform: uppercase;
@@ -34,15 +34,14 @@
   }
 
   &__picture {
-    margin-top: 30px;
-    padding-bottom: 60px;
-    /* position: absolute;
-    right: 12px; */
-    width: 386px;
-    height: 371px;
+    padding-top: 30px;
+    margin-bottom: 60px;
+    height: 370px;
   }
 
   &__picture img {
-    width: 100%;
+    display: block;
+    height: 100%;
+    margin-left: auto;
   }
 }
