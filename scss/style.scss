@@ -2,6 +2,7 @@
 @import "header.scss";
 @import "main.scss";
 @import "exhibitions.scss";
+@import "support.scss";
 
 * {
   text-decoration: none;
@@ -21,10 +22,10 @@ body {
 }
 
 .container {
-  position: relative;
   max-width: 1218px;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
 }
 
 .title {
@@ -34,4 +35,24 @@ body {
   font-family: $gothic;
   text-transform: uppercase;
   margin-bottom: 40px;
+}
+
+.btn {
+  text-transform: uppercase;
+  width: 386px;
+  height: 54px;
+  background: $blue;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  line-height: 29px;
+  font-family: $gothic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  transition: 0.3s;
+  &:hover {
+    background-color: $dark-blue;
+  }
 }

@@ -1,0 +1,23 @@
+@import "variables.scss";
+
+.support {
+  max-width: 814px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 180px;
+  padding-top: 180px;
+  &__title {
+    text-align: center;
+  }
+  &__desc {
+    font-size: 25px;
+    letter-spacing: 0.04em;
+    line-height: 36px;
+    text-align: center;
+    color: $grey;
+    font-family: $AvrileSansRegular;
+    margin-bottom: 40px;
+    width: 802px;
+  }
+}

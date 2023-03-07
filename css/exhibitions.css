@@ -23,11 +23,6 @@
   font-weight: normal;
   src: local("Avrile Sans Bold"), url("../fonts/AvrileSans-Bold.woff") format("woff");
 }
-.exhibitions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .exhibitions__info {
   display: flex;
   justify-content: space-between;
@@ -60,7 +55,6 @@
   margin: 20px 40px;
 }
 .card__title {
-  display: inline;
   font-size: 30px;
   font-family: "Dela Gothic One", cursive;
   color: #f7f1e3;
