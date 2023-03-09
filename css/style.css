@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 @font-face {
   font-family: "Avrile Sans Regular";
   font-style: normal;
@@ -211,20 +212,21 @@
   align-items: flex-end;
   justify-content: space-between;
   width: 800px;
+  /* 
+  &__title {
+    font-size: 30px;
+    font-family: $gothic;
+    color: $grey;
+    width: 316px;
+    margin: 0;
+    z-index: 5;
+  } */
 }
 .card__main-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 20px 40px;
-}
-.card__title {
-  font-size: 30px;
-  font-family: "Dela Gothic One", cursive;
-  color: #f7f1e3;
-  width: 316px;
-  margin: 0;
-  z-index: 5;
 }
 .card__info {
   text-align: end;
@@ -238,7 +240,7 @@
 .card:after {
   content: "";
   position: absolute;
-  top: 245px;
+  top: 420px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -275,7 +277,7 @@
   src: local("Avrile Sans Bold"), url("../fonts/AvrileSans-Bold.woff") format("woff");
 }
 .support {
-  max-width: 814px;
+  max-width: 956px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -293,7 +295,6 @@
   color: #f7f1e3;
   font-family: "Avrile Sans Regular";
   margin-bottom: 40px;
-  width: 802px;
 }
 
 @font-face {
@@ -329,10 +330,14 @@
 }
 .joinUs__container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 134px;
 }
 .joinUs__info {
-  width: 372px;
+  width: 366px;
 }
 .joinUs__desc {
   font-size: 25px;
@@ -341,14 +346,17 @@
   font-family: "Avrile Sans Regular";
 }
 .joinUs__form {
-  display: flex;
+  /*   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-direction: column; */
   width: 386px;
+  height: 232px;
   padding: 40px 30px 0 30px;
   background-color: #f7f1e3;
 }
 .joinUs input {
+  outline: none;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #1f1d1a;
@@ -369,6 +377,104 @@
 }
 .joinUs input::placeholder {
   color: #101010;
+}
+
+@font-face {
+  font-family: "Avrile Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Regular"), url("../fonts/AvrileSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Medium"), url("../fonts/AvrileSans-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans SemiBold"), url("../fonts/AvrileSans-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Bold"), url("../fonts/AvrileSans-Bold.woff") format("woff");
+}
+.other {
+  margin-bottom: 120px;
+}
+
+.cards__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.card {
+  width: 594px;
+  height: 595px;
+}
+.card__information {
+  z-index: 99;
+  padding: 20px 40px;
+}
+.card__title {
+  font-size: 30px;
+  line-height: 43px;
+  font-family: "Dela Gothic One", cursive;
+  width: 230px;
+}
+.card__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 14px;
+  width: 514px;
+}
+.card__info {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.card__time {
+  font-size: 25px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: "Avrile Sans SemiBold";
+}
+.card__date {
+  font-size: 25px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: "Avrile Sans SemiBold";
+}
+.card__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.card__art {
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/ArtAndVineTasting.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.card__music {
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/LiveMusic.jpg) center no-repeat;
+  background-size: cover;
 }
 
 @font-face {
@@ -575,6 +681,7 @@ body {
 }
 
 .btn {
+  color: #f7f1e3;
   text-transform: uppercase;
   width: 326px;
   height: 54px;
@@ -594,13 +701,24 @@ body {
   background-color: #0e0e38;
 }
 
-/* .seeAll {
-  position: absolute;
-  right: 16px;
+.seeAll {
   font-size: 30px;
-  font-family: $gothic;
+  font-family: "Dela Gothic One", cursive;
   text-transform: uppercase;
   border-bottom: 2px solid #f7f1e3;
-
+  color: #f7f1e3;
+  text-align: end;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  display: flex;
+  justify-content: end;
+  width: 162px;
+  margin-left: auto;
 }
- *//*# sourceMappingURL=style.css.map */
+
+.seeAll:hover {
+  color: #ffb142;
+}/*# sourceMappingURL=style.css.map */

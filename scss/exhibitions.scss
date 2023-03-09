@@ -34,7 +34,7 @@
     align-items: center;
     margin: 20px 40px;
   }
-
+  /* 
   &__title {
     font-size: 30px;
     font-family: $gothic;
@@ -42,7 +42,7 @@
     width: 316px;
     margin: 0;
     z-index: 5;
-  }
+  } */
 
   &__info {
     text-align: end;
@@ -57,7 +57,7 @@
 .card:after {
   content: "";
   position: absolute;
-  top: 245px;
+  top: 420px;
   left: 0;
   right: 0;
   bottom: 0;

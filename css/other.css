@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@font-face {
+  font-family: "Avrile Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Regular"), url("../fonts/AvrileSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Medium"), url("../fonts/AvrileSans-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans SemiBold"), url("../fonts/AvrileSans-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Bold"), url("../fonts/AvrileSans-Bold.woff") format("woff");
+}
+.other {
+  margin-bottom: 120px;
+}
+
+.cards__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.card {
+  width: 594px;
+  height: 595px;
+}
+.card__information {
+  z-index: 99;
+  padding: 20px 40px;
+}
+.card__title {
+  font-size: 30px;
+  line-height: 43px;
+  font-family: "Dela Gothic One", cursive;
+  width: 230px;
+}
+.card__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 14px;
+  width: 514px;
+}
+.card__info {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.card__time {
+  font-size: 25px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: "Avrile Sans SemiBold";
+}
+.card__date {
+  font-size: 25px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: "Avrile Sans SemiBold";
+}
+.card__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.card__art {
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/ArtAndVineTasting.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.card__music {
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/LiveMusic.jpg) center no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=other.css.map */

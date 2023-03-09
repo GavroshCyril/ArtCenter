@@ -8,10 +8,14 @@
   margin-bottom: 180px;
   &__container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 134px;
   }
   &__info {
-    width: 372px;
+    width: 366px;
   }
   &__desc {
     font-size: 25px;
@@ -21,14 +25,17 @@
   }
 
   &__form {
-    display: flex;
+    /*   display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-around;
+    flex-direction: column; */
     width: 386px;
+    height: 232px;
     padding: 40px 30px 0 30px;
     background-color: $grey;
   }
   input {
+    outline: none;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid $black;

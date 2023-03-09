@@ -1,0 +1,87 @@
+@import "variables.scss";
+
+.other {
+  margin-bottom: 120px;
+}
+
+.cards {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+}
+
+.card {
+  width: 594px;
+  height: 595px;
+  &__information {
+    z-index: 99;
+    padding: 20px 40px;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 43px;
+    font-family: $gothic;
+    width: 230px;
+  }
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 14px;
+    width: 514px;
+  }
+  &__info {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  &__time {
+    font-size: 25px;
+    line-height: 36px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: $AvrileSansSemiBold;
+  }
+  &__date {
+    font-size: 25px;
+    line-height: 36px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: $AvrileSansSemiBold;
+  }
+  &__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+
+.card__art {
+  position: relative;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(../images/ArtAndVineTasting.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.card__music {
+  position: relative;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(../images/LiveMusic.jpg) center no-repeat;
+  background-size: cover;
+}

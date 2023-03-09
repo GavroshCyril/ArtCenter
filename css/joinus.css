@@ -32,10 +32,14 @@
 }
 .joinUs__container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 134px;
 }
 .joinUs__info {
-  width: 372px;
+  width: 366px;
 }
 .joinUs__desc {
   font-size: 25px;
@@ -44,14 +48,17 @@
   font-family: "Avrile Sans Regular";
 }
 .joinUs__form {
-  display: flex;
+  /*   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-direction: column; */
   width: 386px;
+  height: 232px;
   padding: 40px 30px 0 30px;
   background-color: #f7f1e3;
 }
 .joinUs input {
+  outline: none;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #1f1d1a;

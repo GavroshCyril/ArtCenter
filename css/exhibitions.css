@@ -47,20 +47,21 @@
   align-items: flex-end;
   justify-content: space-between;
   width: 800px;
+  /* 
+  &__title {
+    font-size: 30px;
+    font-family: $gothic;
+    color: $grey;
+    width: 316px;
+    margin: 0;
+    z-index: 5;
+  } */
 }
 .card__main-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 20px 40px;
-}
-.card__title {
-  font-size: 30px;
-  font-family: "Dela Gothic One", cursive;
-  color: #f7f1e3;
-  width: 316px;
-  margin: 0;
-  z-index: 5;
 }
 .card__info {
   text-align: end;
@@ -74,7 +75,7 @@
 .card:after {
   content: "";
   position: absolute;
-  top: 245px;
+  top: 420px;
   left: 0;
   right: 0;
   bottom: 0;
