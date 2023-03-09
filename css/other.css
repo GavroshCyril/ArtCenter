@@ -95,4 +95,16 @@
   position: relative;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/LiveMusic.jpg) center no-repeat;
   background-size: cover;
+}
+
+.card__renaissance {
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/ArtRenaissance.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.card__modern {
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/modern.jpg) center no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=other.css.map */
