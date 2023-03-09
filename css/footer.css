@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@font-face {
+  font-family: "Avrile Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Regular"), url("../fonts/AvrileSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Medium"), url("../fonts/AvrileSans-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans SemiBold"), url("../fonts/AvrileSans-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Bold"), url("../fonts/AvrileSans-Bold.woff") format("woff");
+}
+.footer {
+  background-color: #f7f1e3;
+  padding-top: 60px;
+  color: #1f1d1a;
+}
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__news {
+  width: 386px;
+}
+.footer__desc {
+  padding-top: 37px;
+  padding-bottom: 20px;
+  font-size: 25px;
+  line-height: 37px;
+  letter-spacing: 0.04em;
+  font-family: "Avrile Sans Regular";
+}
+.footer__paragraph span {
+  font-family: "Avrile Sans SemiBold";
+}
+.footer__links {
+  width: 178px;
+  margin-bottom: 60px;
+}
+.footer__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  font-family: "Avrile Sans Regular";
+  color: black;
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: -0.0025em;
+  padding-bottom: 30px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.footer__link:last-child {
+  padding-bottom: 0;
+}
+.footer__link:hover {
+  color: #ffb142;
+}
+.footer__contacts {
+  width: 390px;
+  height: 214px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+.footer__contacts span {
+  font-size: 25px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  color: black;
+  font-family: "Avrile Sans Regular";
+}
+.footer__span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 20px; /* 
+width: 430px; */
+}
+.footer__address::before {
+  content: "";
+  display: block;
+  background: url("../images/locationIcon.svg") no-repeat;
+  width: 32px;
+  height: 32px;
+}
+.footer__email::before {
+  content: "";
+  display: block;
+  background: url("../images/emailIcon.svg") no-repeat;
+  width: 32px;
+  height: 32px;
+}
+.footer__tel::before {
+  content: "";
+  display: block;
+  background: url("../images/telIcon.svg") no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+.footer__search {
+  background: rgba(247, 241, 227, 0.2);
+  position: relative;
+}
+
+.footer__search input {
+  padding-left: 19px;
+  font-family: "Avrile Sans Regular";
+  width: 316px;
+  height: 49px;
+  /* padding-left: 19px; */
+  border: 1px solid #645845;
+  outline: none;
+  background: rgba(31, 29, 26, 0.2);
+  color: rgb(16, 16, 16);
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+}
+
+.footer__search input::-moz-placeholder {
+  color: rgb(16, 16, 16);
+}
+
+.footer__search input::placeholder {
+  color: rgb(16, 16, 16);
+}
+
+.footer__search button {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 70px;
+  height: 51px;
+  border: none;
+  background: #26265a;
+  border: 1px solid #645845;
+  cursor: pointer;
+}
+
+.footer__search button:before {
+  content: "";
+  display: block;
+  background: url("../images/reply.svg") no-repeat;
+  width: 35px;
+  height: 30px;
+  margin: 10px 18px;
+}/*# sourceMappingURL=footer.css.map */
