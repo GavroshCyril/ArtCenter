@@ -46,15 +46,6 @@
   align-items: flex-end;
   justify-content: space-between;
   width: 800px;
-  /* 
-  &__title {
-    font-size: 30px;
-    font-family: $gothic;
-    color: $grey;
-    width: 316px;
-    margin: 0;
-    z-index: 5;
-  } */
 }
 .card__main-info {
   display: flex;
@@ -72,5 +63,5 @@
 }
 
 .arrow {
-  margin-top: 11px;
+  margin-top: 7px;
 }/*# sourceMappingURL=exhibitions.css.map */

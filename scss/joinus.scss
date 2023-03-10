@@ -1,11 +1,12 @@
 @import "variables.scss";
 
 .joinUs {
-  max-width: 800px;
+  padding-top: 180px;
+  /*  max-width: 800px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 180px;
+  justify-content: space-between; 
+  margin-bottom: 180px; */
   &__container {
     display: flex;
     flex-direction: row;
@@ -13,8 +14,10 @@
     align-items: flex-start;
     padding: 0px;
     gap: 134px;
+    width: 802px;
+    margin: 0 auto;
   }
-  &__info {
+  /* &__info {
     width: 366px;
   }
   &__desc {
@@ -28,7 +31,7 @@
     /*   display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: column; */
+    flex-direction: column; 
     width: 386px;
     height: 232px;
     padding: 40px 30px 0 30px;
@@ -44,7 +47,7 @@
     line-height: 25px;
     letter-spacing: 0.04em;
     font-family: $AvrileSansRegular;
-    /*  padding: 14px 0 9px 20px; */
+    padding: 14px 0 9px 20px; 
     padding-top: 14px;
     padding-bottom: 9px;
     padding-left: 20px;
@@ -53,5 +56,68 @@
   }
   input::placeholder {
     color: $dark-grey;
+  }
+ */
+  &__paragraph {
+    width: 426px;
+  }
+  &__paragraph p {
+    font-size: 25px;
+    line-height: 36px;
+    letter-spacing: 0.04em;
+    font-family: $AvrileSansRegular;
+  }
+  &__form {
+    width: 386px;
+    height: 232px;
+    background: $grey;
+    border: 1px solid rgba(170, 166, 157, 0.2);
+    backdrop-filter: blur(30px);
+  }
+  &__form-container {
+    margin: 40px 30px 60px 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__input {
+    outline: none;
+    border: none;
+    width: 286px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 14px 20px 9px;
+    gap: 10px;
+    background: rgba(247, 241, 227, 0.2);
+    border-bottom: 1px solid #1f1d1a;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+    color: $dark-grey;
+    font-family: $AvrileSansRegular;
+  }
+
+  &__input::placeholder {
+    color: $dark-grey;
+  }
+
+  &__button {
+    width: 326px;
+    height: 54px;
+    cursor: pointer;
+    background: $blue;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $grey;
+    font-family: $gothic;
+    border: none;
+    transition: 0.3s;
+    &:hover {
+      background-color: $dark-blue;
+    }
   }
 }

@@ -211,15 +211,6 @@
   align-items: flex-end;
   justify-content: space-between;
   width: 800px;
-  /* 
-  &__title {
-    font-size: 30px;
-    font-family: $gothic;
-    color: $grey;
-    width: 316px;
-    margin: 0;
-    z-index: 5;
-  } */
 }
 .card__main-info {
   display: flex;
@@ -237,7 +228,7 @@
 }
 
 .arrow {
-  margin-top: 11px;
+  margin-top: 7px;
 }
 
 @font-face {
@@ -310,11 +301,53 @@
   src: local("Avrile Sans Bold"), url("../fonts/AvrileSans-Bold.woff") format("woff");
 }
 .joinUs {
-  max-width: 800px;
+  padding-top: 180px;
+  /*  max-width: 800px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 180px;
+  justify-content: space-between; 
+  margin-bottom: 180px; */
+  /* &__info {
+     width: 366px;
+   }
+   &__desc {
+     font-size: 25px;
+     line-height: 36px;
+     letter-spacing: 0.04em;
+     font-family: $AvrileSansRegular;
+   }
+
+   &__form {
+     /*   display: flex;
+     align-items: center;
+     justify-content: space-around;
+     flex-direction: column; 
+     width: 386px;
+     height: 232px;
+     padding: 40px 30px 0 30px;
+     background-color: $grey;
+   }
+   input {
+     outline: none;
+     background-color: transparent;
+     border: none;
+     border-bottom: 1px solid $black;
+     color: $dark-grey;
+     font-size: 18px;
+     line-height: 25px;
+     letter-spacing: 0.04em;
+     font-family: $AvrileSansRegular;
+     padding: 14px 0 9px 20px; 
+     padding-top: 14px;
+     padding-bottom: 9px;
+     padding-left: 20px;
+     width: 316px;
+     margin-bottom: 30px;
+   }
+   input::placeholder {
+     color: $dark-grey;
+   }
+  */
 }
 .joinUs__container {
   display: flex;
@@ -323,48 +356,72 @@
   align-items: flex-start;
   padding: 0px;
   gap: 134px;
+  width: 802px;
+  margin: 0 auto;
 }
-.joinUs__info {
-  width: 366px;
+.joinUs__paragraph {
+  width: 426px;
 }
-.joinUs__desc {
+.joinUs__paragraph p {
   font-size: 25px;
   line-height: 36px;
   letter-spacing: 0.04em;
   font-family: "Avrile Sans Regular";
 }
 .joinUs__form {
-  /*   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column; */
   width: 386px;
   height: 232px;
-  padding: 40px 30px 0 30px;
-  background-color: #f7f1e3;
+  background: #f7f1e3;
+  border: 1px solid rgba(170, 166, 157, 0.2);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
 }
-.joinUs input {
+.joinUs__form-container {
+  margin: 40px 30px 60px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+}
+.joinUs__input {
   outline: none;
-  background-color: transparent;
   border: none;
+  width: 286px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 14px 20px 9px;
+  gap: 10px;
+  background: rgba(247, 241, 227, 0.2);
   border-bottom: 1px solid #1f1d1a;
-  color: #101010;
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 0.04em;
+  color: #101010;
   font-family: "Avrile Sans Regular";
-  /*  padding: 14px 0 9px 20px; */
-  padding-top: 14px;
-  padding-bottom: 9px;
-  padding-left: 20px;
-  width: 316px;
-  margin-bottom: 30px;
 }
-.joinUs input::-moz-placeholder {
+.joinUs__input::-moz-placeholder {
   color: #101010;
 }
-.joinUs input::placeholder {
+.joinUs__input::placeholder {
   color: #101010;
+}
+.joinUs__button {
+  width: 326px;
+  height: 54px;
+  cursor: pointer;
+  background: #26265a;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f7f1e3;
+  font-family: "Dela Gothic One", cursive;
+  border: none;
+  transition: 0.3s;
+}
+.joinUs__button:hover {
+  background-color: #0e0e38;
 }
 
 @font-face {
