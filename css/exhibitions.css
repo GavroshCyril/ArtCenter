@@ -26,7 +26,6 @@
 .exhibitions__info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
 }
 .exhibitions__calendar {
   width: 386px;
@@ -70,17 +69,6 @@
   font-size: 25px;
   text-transform: uppercase;
   font-family: "Avrile Sans SemiBold";
-}
-
-.card:after {
-  content: "";
-  position: absolute;
-  top: 420px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 1;
 }
 
 .arrow {

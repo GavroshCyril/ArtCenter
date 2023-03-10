@@ -191,7 +191,6 @@
 .exhibitions__info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
 }
 .exhibitions__calendar {
   width: 386px;
@@ -235,17 +234,6 @@
   font-size: 25px;
   text-transform: uppercase;
   font-family: "Avrile Sans SemiBold";
-}
-
-.card:after {
-  content: "";
-  position: absolute;
-  top: 420px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 1;
 }
 
 .arrow {
@@ -465,6 +453,28 @@
   align-items: flex-end;
 }
 
+.card:after {
+  content: "";
+  position: absolute;
+  top: 420px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.card__wrap:after {
+  content: "";
+  position: absolute;
+  top: 248px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
 .card__art {
   position: relative;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/ArtAndVineTasting.jpg) center no-repeat;
@@ -487,6 +497,25 @@
   position: relative;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/modern.jpg) center no-repeat;
   background-size: cover;
+}
+
+.card__masterpieces {
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/masterpieces.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.card__wrap {
+  width: 802px;
+  height: 423px;
+}
+
+.card__masterpieces-header {
+  width: 722px;
+}
+
+.card__masterpieces-title {
+  width: 316px;
 }
 
 @font-face {
