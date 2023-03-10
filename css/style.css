@@ -303,6 +303,7 @@
 }
 .joinUs {
   padding-top: 180px;
+  display: flex;
   /*  max-width: 800px;
   margin: 0 auto;
   display: flex;
@@ -357,8 +358,6 @@
   align-items: flex-start;
   padding: 0px;
   gap: 134px;
-  width: 802px;
-  margin: 0 auto;
 }
 .joinUs__paragraph {
   width: 426px;
