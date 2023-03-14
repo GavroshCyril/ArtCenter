@@ -4,13 +4,14 @@
   &__info {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
   }
   &__calendar {
     width: 386px;
     height: 423px;
   }
   &__calendar img {
-    width: 100%;
+    height: 100%;
   }
 
   &__card img {

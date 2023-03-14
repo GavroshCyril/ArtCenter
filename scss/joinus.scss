@@ -2,6 +2,7 @@
 
 .joinUs {
   padding-top: 180px;
+  margin-bottom: 180px;
   display: flex;
   /*  max-width: 800px;
   margin: 0 auto;
@@ -96,6 +97,16 @@
     letter-spacing: 0.04em;
     color: $dark-grey;
     font-family: $AvrileSansRegular;
+    transition: 0.3s;
+    &:active,
+    &:focus {
+      outline-offset: -10px;
+      outline: 2px dashed $blue;
+    }
+    &:hover,
+    &:focus {
+      border: none;
+    }
   }
 
   &__input::placeholder {

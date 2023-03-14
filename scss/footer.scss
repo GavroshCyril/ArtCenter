@@ -64,7 +64,7 @@
     align-items: flex-start;
     gap: 30px;
   }
-  &__contacts span {
+  &__contacts a {
     font-size: 25px;
     line-height: 36px;
     letter-spacing: 0.04em;
@@ -76,8 +76,14 @@
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 20px; /* 
-    width: 430px; */
+    gap: 20px;
+    /*width: 430px;
+    */
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
   }
   &__address::before {
     content: "";
@@ -86,12 +92,18 @@
     width: 32px;
     height: 32px;
   }
+  &__email:hover {
+    color: $orange;
+  }
   &__email::before {
     content: "";
     display: block;
     background: url("../images/emailIcon.svg") no-repeat;
     width: 32px;
     height: 32px;
+  }
+  &__tel:hover {
+    color: $orange;
   }
   &__tel::before {
     content: "";
@@ -107,11 +119,13 @@
   position: relative;
 }
 .footer__search input {
+  transition: 0.3s ease-in-out;
   padding-left: 19px;
   font-family: $AvrileSansRegular;
   width: 316px;
   height: 49px;
-  /* padding-left: 19px; */
+  /*padding-left: 19px;
+  */
   border: 1px solid #645845;
   outline: none;
   background: rgba(31, 29, 26, 0.2);
@@ -119,6 +133,12 @@
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0.04em;
+  &:active,
+  &:hover,
+  &:focus {
+    outline-offset: -10px;
+    outline: 2px dashed $blue;
+  }
 }
 
 .footer__search input::placeholder {
@@ -126,15 +146,19 @@
 }
 
 .footer__search button {
+  transition: 0.3s;
   position: absolute;
   top: 0;
   right: 0px;
   width: 70px;
-  height: 51px;
+  height: 50px;
   border: none;
   background: $blue;
   border: 1px solid #645845;
   cursor: pointer;
+  &:hover {
+    background: $dark-blue;
+  }
 }
 .footer__search button:before {
   content: "";

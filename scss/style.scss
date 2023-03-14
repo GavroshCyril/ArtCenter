@@ -13,16 +13,13 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: $black;
   color: $grey;
   font-family: "AvrileSans-Condensed";
-}
-
-.active {
-  border-bottom: 1px solid $white;
 }
 
 .container {
@@ -78,6 +75,7 @@ body {
   justify-content: end;
   width: 162px;
   margin-left: auto;
+  margin-top: 50px;
 }
 
 .seeAll:hover {

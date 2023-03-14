@@ -31,16 +31,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
 }
 
 .card {
+  position: relative;
+  cursor: pointer;
   width: 594px;
   height: 595px;
 }
+.card:hover .card__information {
+  opacity: 1;
+  /* transform: translateY(-200px);
+  -webkit-transform: translateY(-200px);
+  -moz-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  -o-transform: translateY(-200px); */
+}
 .card__information {
-  z-index: 99;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  margin: 0;
+  transition: 0.3s;
+  opacity: 0;
   padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.7);
 }
 .card__title {
   font-size: 30px;
@@ -83,28 +98,6 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
-}
-
-.card:after {
-  content: "";
-  position: absolute;
-  top: 420px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 1;
-}
-
-.card__wrap:after {
-  content: "";
-  position: absolute;
-  top: 248px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 1;
 }
 
 .card__art {

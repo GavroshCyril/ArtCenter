@@ -25,6 +25,7 @@
 }
 .joinUs {
   padding-top: 180px;
+  margin-bottom: 180px;
   display: flex;
   /*  max-width: 800px;
   margin: 0 auto;
@@ -121,6 +122,14 @@
   letter-spacing: 0.04em;
   color: #101010;
   font-family: "Avrile Sans Regular";
+  transition: 0.3s;
+}
+.joinUs__input:active, .joinUs__input:focus {
+  outline-offset: -10px;
+  outline: 2px dashed #26265a;
+}
+.joinUs__input:hover, .joinUs__input:focus {
+  border: none;
 }
 .joinUs__input::-moz-placeholder {
   color: #101010;

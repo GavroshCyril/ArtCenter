@@ -31,16 +31,20 @@
             />
           </a>
           <ul class="nav">
-            <li class="nav__item active">
-              <a class="nav__link" href="#">Main</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#main">Main</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Exhibitions and events</a>
+              <a class="nav__link" href="#events">Exhibitions and events</a>
             </li>
-            <li class="nav__item"><a class="nav__link" href="#">Gallery</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Shop</a></li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Contacts</a>
+              <a class="nav__link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#shop">Shop</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contacts">Contacts</a>
             </li>
           </ul>
           <div class="links">
@@ -63,7 +67,7 @@
         </nav>
       </div>
     </header>
-    <main class="main">
+    <main class="main" id="main">
       <div class="container">
         <div class="main__info">
           <span class="main__span">unleashing</span>
@@ -80,7 +84,7 @@
       </div>
     </main>
 
-    <section class="exhibitions">
+    <section class="exhibitions" id="events">
       <div class="container">
         <h2 class="title exhibitions__title">Exhibitions</h2>
         <div class="exhibitions__info">
@@ -110,50 +114,49 @@
             </div>
           </div>
         </div>
+
+        <div class="cards__container">
+          <div class="card card__renaissance">
+            <div class="card__information">
+              <div class="card__header">
+                <h3 class="card__title">The Art of Renaissance</h3>
+                <div class="card__info">
+                  <span class="card__date">Jan. 28 – Feb. 16</span>
+                  <span class="card__time">10:00 AM – 8:00 PM</span>
+                </div>
+              </div>
+              <div class="card__footer">
+                <div class="arrow">
+                  <a href="#">
+                    <img src="./images/arrow.svg" alt="Arrow" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card__modern">
+            <div class="card__information">
+              <div class="card__header">
+                <h3 class="card__title">Modern Abstract Art</h3>
+                <div class="card__info">
+                  <span class="card__date">Jan. 28 – Feb. 16</span>
+                  <span class="card__time">10:00 AM – 8:00 PM</span>
+                </div>
+              </div>
+              <div class="card__footer">
+                <div class="arrow">
+                  <a href="#">
+                    <img src="./images/arrow.svg" alt="Arrow" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="seeAll" href="#">see all</a>
       </div>
     </section>
 
-    <div class="container">
-      <div class="cards__container">
-        <div class="card card__renaissance">
-          <div class="card__information">
-            <div class="card__header">
-              <h3 class="card__title">The Art of Renaissance</h3>
-              <div class="card__info">
-                <span class="card__date">Jan. 28 – Feb. 16</span>
-                <span class="card__time">10:00 AM – 8:00 PM</span>
-              </div>
-            </div>
-            <div class="card__footer">
-              <div class="arrow">
-                <a href="#">
-                  <img src="./images/arrow.svg" alt="Arrow" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card card__modern">
-          <div class="card__information">
-            <div class="card__header">
-              <h3 class="card__title">Modern Abstract Art</h3>
-              <div class="card__info">
-                <span class="card__date">Jan. 28 – Feb. 16</span>
-                <span class="card__time">10:00 AM – 8:00 PM</span>
-              </div>
-            </div>
-            <div class="card__footer">
-              <div class="arrow">
-                <a href="#">
-                  <img src="./images/arrow.svg" alt="Arrow" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="seeAll" href="#">see all</a>
-    </div>
     <section class="joinUs">
       <div class="container">
         <div class="joinUs__container">
@@ -197,7 +200,7 @@
         </div>
       </div>
     </section> -->
-    <section class="education">
+    <section class="education" id="gallery">
       <div class="container">
         <h2 class="title other__title">Education</h2>
         <div class="cards__container">
@@ -241,7 +244,7 @@
         <a class="seeAll" href="#">see all</a>
       </div>
     </section>
-    <section class="support">
+    <section class="support" id="shop">
       <div class="container">
         <h2 class="title support__title">support our Art Center</h2>
         <div class="support__desc">
@@ -300,7 +303,7 @@
         <a class="seeAll" href="#">see all</a>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container">
         <div class="footer__wrap">
           <div class="footer__news">
@@ -322,21 +325,25 @@
           </div>
           <ul class="footer__links">
             <li class="footer__link-item">
-              <a href="#" class="footer__link">Main</a>
-              <a href="#" class="footer__link">Exhibitions and events</a>
-              <a href="#" class="footer__link">Gallery</a>
-              <a href="#" class="footer__link">Shop</a>
-              <a href="#" class="footer__link">Contacts</a>
+              <a href="#main" class="footer__link">Main</a>
+              <a href="#events" class="footer__link">Exhibitions and events</a>
+              <a href="#gallery" class="footer__link">Gallery</a>
+              <a href="#shop" class="footer__link">Shop</a>
+              <a href="#contacts" class="footer__link">Contacts</a>
             </li>
           </ul>
           <div class="footer__contacts">
-            <span class="footer__span footer__address"
-              >Laisvės pr. 121‑33, LT‑06120 Vilnius</span
+            <a class="footer__span footer__address"
+              >Laisvės pr. 121‑33, LT‑06120 Vilnius</a
             >
-            <span class="footer__span footer__email"
+            <a
+              class="footer__span footer__email"
+              href="mailto: ArtCen_Vilnius@gmail.com"
               >ArtCen_Vilnius@gmail.com
-            </span>
-            <span class="footer__span footer__tel">+370 (678) 89-462</span>
+            </a>
+            <a class="footer__span footer__tel" href="tel:+37067889462"
+              >+370 (678) 89-462</a
+            >
           </div>
         </div>
       </div>
