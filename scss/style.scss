@@ -25,7 +25,7 @@ body {
 
 .container {
   position: relative;
-  max-width: 1218px;
+  max-width: 1250px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -81,4 +81,10 @@ body {
 
 .seeAll:hover {
   color: $orange;
+}
+
+@media screen and (min-width: 360px) {
+  .nav{
+  opacity: 0;
+  }
 }
