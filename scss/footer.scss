@@ -84,34 +84,11 @@
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
+    &:hover{
+      color: $orange;
+    }
   }
-  &__address::before {
-    content: "";
-    display: block;
-    background: url("../images/locationIcon.svg") no-repeat;
-    width: 32px;
-    height: 32px;
-  }
-  &__email:hover {
-    color: $orange;
-  }
-  &__email::before {
-    content: "";
-    display: block;
-    background: url("../images/emailIcon.svg") no-repeat;
-    width: 32px;
-    height: 32px;
-  }
-  &__tel:hover {
-    color: $orange;
-  }
-  &__tel::before {
-    content: "";
-    display: block;
-    background: url("../images/telIcon.svg") no-repeat;
-    width: 32px;
-    height: 32px;
-  }
+  
 }
 
 .footer__search {

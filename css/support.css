@@ -35,6 +35,7 @@
   text-align: center;
 }
 .support__desc {
+  width: 800px;
   font-size: 25px;
   letter-spacing: 0.04em;
   line-height: 36px;

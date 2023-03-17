@@ -63,6 +63,13 @@
   font-family: "Avrile Sans SemiBold";
 }
 
-.arrow {
+.arrow svg {
   margin-top: 7px;
+  transition: 0.5s;
+  color: #f7f1e3;
+}
+
+.arrow svg:hover {
+  color: #ffb142;
+  transform: translateX(20px);
 }/*# sourceMappingURL=exhibitions.css.map */

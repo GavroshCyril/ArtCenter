@@ -45,6 +45,13 @@
   }
 }
 
-.arrow {
+.arrow svg {
   margin-top: 7px;
+  transition: 0.5s;
+  color: $grey;
+}
+
+.arrow svg:hover{
+  color: $orange;
+  transform: translateX(20px);
 }

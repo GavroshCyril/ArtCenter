@@ -104,32 +104,8 @@
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-.footer__address::before {
-  content: "";
-  display: block;
-  background: url("../images/locationIcon.svg") no-repeat;
-  width: 32px;
-  height: 32px;
-}
-.footer__email:hover {
+.footer__span:hover {
   color: #ffb142;
-}
-.footer__email::before {
-  content: "";
-  display: block;
-  background: url("../images/emailIcon.svg") no-repeat;
-  width: 32px;
-  height: 32px;
-}
-.footer__tel:hover {
-  color: #ffb142;
-}
-.footer__tel::before {
-  content: "";
-  display: block;
-  background: url("../images/telIcon.svg") no-repeat;
-  width: 32px;
-  height: 32px;
 }
 
 .footer__search {

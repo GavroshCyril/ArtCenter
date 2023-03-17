@@ -26,58 +26,11 @@
 .joinUs {
   padding-top: 180px;
   margin-bottom: 180px;
-  display: flex;
-  /*  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between; 
-  margin-bottom: 180px; */
-  /* &__info {
-     width: 366px;
-   }
-   &__desc {
-     font-size: 25px;
-     line-height: 36px;
-     letter-spacing: 0.04em;
-     font-family: $AvrileSansRegular;
-   }
-
-   &__form {
-     /*   display: flex;
-     align-items: center;
-     justify-content: space-around;
-     flex-direction: column; 
-     width: 386px;
-     height: 232px;
-     padding: 40px 30px 0 30px;
-     background-color: $grey;
-   }
-   input {
-     outline: none;
-     background-color: transparent;
-     border: none;
-     border-bottom: 1px solid $black;
-     color: $dark-grey;
-     font-size: 18px;
-     line-height: 25px;
-     letter-spacing: 0.04em;
-     font-family: $AvrileSansRegular;
-     padding: 14px 0 9px 20px; 
-     padding-top: 14px;
-     padding-bottom: 9px;
-     padding-left: 20px;
-     width: 316px;
-     margin-bottom: 30px;
-   }
-   input::placeholder {
-     color: $dark-grey;
-   }
-  */
 }
 .joinUs__container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   padding: 0px;
   gap: 134px;
@@ -109,7 +62,7 @@
 .joinUs__input {
   outline: none;
   border: none;
-  width: 286px;
+  width: 326px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -129,7 +82,7 @@
   outline: 2px dashed #26265a;
 }
 .joinUs__input:hover, .joinUs__input:focus {
-  border: none;
+  border-bottom: 1px solid transparent;
 }
 .joinUs__input::-moz-placeholder {
   color: #101010;
