@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    gap: 30px;
   }
   &__calendar {
     width: 386px;
@@ -51,7 +52,7 @@
   color: $grey;
 }
 
-.arrow svg:hover{
+.arrow svg:hover {
   color: $orange;
   transform: translateX(20px);
 }

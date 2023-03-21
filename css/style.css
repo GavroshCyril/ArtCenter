@@ -113,6 +113,21 @@
   margin-left: 0;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
 @font-face {
   font-family: "Avrile Sans Regular";
   font-style: normal;
@@ -206,6 +221,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+  gap: 30px;
 }
 .exhibitions__calendar {
   width: 386px;
@@ -289,7 +305,7 @@
   text-align: center;
 }
 .support__desc {
-  width: 800px;
+  max-width: 800px;
   font-size: 25px;
   letter-spacing: 0.04em;
   line-height: 36px;
@@ -612,7 +628,7 @@
 }
 .footer {
   background-color: #f7f1e3;
-  padding-top: 60px;
+  padding: 60px 0;
   color: #1f1d1a;
 }
 .footer__wrap {
@@ -636,7 +652,10 @@
 }
 .footer__links {
   width: 178px;
-  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  flex-direction: column;
 }
 .footer__link {
   display: flex;
@@ -662,13 +681,11 @@
 .footer__link:hover {
   color: #ffb142;
 }
-.footer__contacts {
-  width: 390px;
+.footer .footer__contacts {
+  width: 302px;
   height: 214px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
   gap: 30px;
 }
 .footer__contacts a {
@@ -823,8 +840,251 @@ body {
   color: #ffb142;
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 360px) {
+  .main__title {
+    font-size: 33px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .title {
+    font-size: 20px;
+    line-height: 48px;
+  }
+  .support__desc p {
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (max-width: 486px) {
+  .main {
+    margin-top: 36px;
+    padding-bottom: 40px;
+  }
+  .main__title {
+    font-size: 44px;
+  }
+  .seeAll {
+    font-size: 18px;
+    width: 100px;
+    margin-top: 16px;
+  }
+  .title {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .joinUs {
+    padding-top: 80px;
+    margin-bottom: 80px;
+  }
+  .joinUs__paragraph p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .joinUs__form {
+    width: 320px;
+    background: transparent;
+    border: none;
+  }
+  .joinUs__input {
+    color: white;
+    border-bottom: 1px solid #f7f1e3;
+  }
+  .joinUs__input:active, .joinUs__input:focus {
+    outline: 2px dashed rgba(247, 241, 227, 0.6);
+  }
+  .joinUs__input::placeholder {
+    color: rgba(247, 241, 227, 0.6);
+  }
+  .cards__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 419px;
+    height: 406px;
+  }
+  .card__information {
+    padding: 10px 20px;
+  }
+  .card__header {
+    width: 377px;
+  }
+  .card__title {
+    font-size: 23px;
+    line-height: 30px;
+    width: 265px;
+  }
+  .card__date {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .card__time {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .support {
+    padding-top: 80px;
+    margin-bottom: 80px;
+  }
+  .support__desc p {
+    font-size: 22px;
+  }
+  .other {
+    margin-bottom: 80px;
+  }
+  .footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer__links {
+    margin-bottom: 0;
+  }
+  .footer__link {
+    font-size: 22px;
+  }
+  .footer__links {
+    display: flex;
+    gap: 12px;
+  }
+  .footer__contacts {
+    height: 144px;
+    gap: 16px;
+  }
+  .footer__contacts a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .support__desc {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .hamburger {
+    display: block;
+    z-index: 12;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
   .nav {
-    display: none;
+    z-index: 10;
+    position: fixed;
+    right: 100%;
+    top: 0;
+    gap: 0;
+    flex-direction: column;
+    background-color: #1f1d1a;
+    width: 100%;
+    text-align: left;
+    transition: 0.4s;
+  }
+  .nav.active {
+    right: 0;
+  }
+  .nav__item {
+    padding-left: 10px;
+    width: 250px;
+    margin: 16px 0;
+    border-bottom: 1px solid #f7f1e3;
+    padding-bottom: 24px;
+  }
+  .nav__link {
+    font-size: 22px;
+    font-family: "Dela Gothic One", cursive;
+  }
+  .navigation .nav__item:first-child {
+    margin-left: 10px;
+  }
+  .navigation .nav__link:hover {
+    color: #ffb142;
+    border-bottom: 1px solid transparent;
+  }
+  .main__title {
+    font-size: 70px;
+  }
+  .main__span-info {
+    opacity: 0;
+  }
+  .card {
+    height: 416px;
+  }
+  .support {
+    margin-bottom: 78px;
+    padding-top: 78px;
+  }
+  .other {
+    margin-bottom: 78px;
+  }
+  .seeAll {
+    margin-top: 22px;
+  }
+  .joinUs {
+    padding-top: 78px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 995px) {
+  .joinUs__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .joinUs__form {
+    width: 433px;
+    display: flex;
+    justify-content: center;
+  }
+  .joinUs__paragraph p {
+    font-size: 22px;
+  }
+  .title {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1145px) {
+  .main__title {
+    font-size: 86px;
+  }
+  .footer {
+    padding: 60px 0;
+  }
+  .footer__wrap {
+    gap: 52px;
+  }
+  .footer__desc {
+    padding-top: 30px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .footer__links {
+    gap: 18px;
+  }
+  .footer__link {
+    font-size: 22px;
+    line-height: 42px;
+  }
+  .footer__contacts {
+    width: 300px;
+  }
+  .footer__contacts a {
+    font-size: 19px;
+    line-height: 36px;
   }
 }/*# sourceMappingURL=style.css.map */

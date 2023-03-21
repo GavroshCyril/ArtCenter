@@ -2,7 +2,7 @@
 
 .footer {
   background-color: $grey;
-  padding-top: 60px;
+  padding: 60px 0;
   color: $black;
   &__wrap {
     display: flex;
@@ -28,7 +28,10 @@
   }
   &__links {
     width: 178px;
-    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+    flex-direction: column;
   }
 
   &__link {
@@ -56,13 +59,11 @@
     color: $orange;
   }
 
-  &__contacts {
-    width: 390px;
+  .footer__contacts {
+    width: 302px;
     height: 214px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
     gap: 30px;
   }
   &__contacts a {
@@ -83,11 +84,10 @@
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
-    &:hover{
+    &:hover {
       color: $orange;
     }
   }
-  
 }
 
 .footer__search {

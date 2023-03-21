@@ -27,6 +27,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+  gap: 30px;
 }
 .exhibitions__calendar {
   width: 386px;

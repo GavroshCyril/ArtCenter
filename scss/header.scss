@@ -1,5 +1,4 @@
 @import "variables.scss";
-@import "style.scss";
 
 .navigation {
   display: flex;
@@ -42,18 +41,17 @@
   justify-content: space-between;
 }
 
-.icon a{
+.icon a {
   display: inline-block;
   color: $grey;
   margin-left: 35px;
- 
 }
 
-.icon a svg{
+.icon a svg {
   transition: 0.3s;
 }
 
-.icon a svg:hover{
+.icon a svg:hover {
   color: $orange;
   transform: scale(1.4);
 }
@@ -62,3 +60,17 @@
   margin-left: 0;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+}
