@@ -91,15 +91,14 @@
 }
 
 .footer__search {
+  display: flex;
+  height: 50px;
   background: rgba(247, 241, 227, 0.2);
-  position: relative;
 }
 .footer__search input {
+  font-family: $AvrileSansRegular;
   transition: 0.3s ease-in-out;
   padding-left: 19px;
-  font-family: $AvrileSansRegular;
-  width: 316px;
-  height: 49px;
   padding: 0 30px 0 20px;
   border: 1px solid #645845;
   outline: none;
@@ -108,6 +107,7 @@
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0.04em;
+  height: 100%;
   &:active,
   &:hover,
   &:focus {
@@ -122,11 +122,6 @@
 
 .footer__search button {
   transition: 0.3s;
-  position: absolute;
-  top: 0;
-  right: 0px;
-  width: 70px;
-  height: 50px;
   border: none;
   background: $blue;
   border: 1px solid #645845;

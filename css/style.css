@@ -221,27 +221,27 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
-  gap: 30px 50px;
+  gap: 50px 30px;
   flex-wrap: wrap;
 }
 .exhibitions__info > div:first-child {
-  width: calc((100% - 30px) / 2 * 2);
+  width: calc((100% - 30px) / 3);
 }
 .exhibitions__info > div:nth-child(2) {
   width: calc((100% - 30px) / 3 * 2);
 }
 .exhibitions__info > div:nth-child(3) {
-  width: calc((100% - 30px) / 3 * 2);
+  width: calc((100% - 30px) / 2);
 }
 .exhibitions__info > div:last-child {
-  width: calc((100% - 30px) / 2 * 2);
+  width: calc((100% - 30px) / 2);
 }
 .exhibitions__calendar {
   width: 386px;
-  height: 423px;
 }
 .exhibitions__calendar img {
   height: 100%;
+  width: 100%;
 }
 .exhibitions__card img {
   height: 423px;
@@ -261,14 +261,6 @@
   justify-content: space-between;
   align-items: center;
   margin: 20px 40px;
-}
-.card__info {
-  text-align: end;
-  z-index: 5;
-  width: 220px;
-  font-size: 25px;
-  text-transform: uppercase;
-  font-family: "Avrile Sans SemiBold";
 }
 
 .arrow svg {
@@ -504,10 +496,11 @@
 }
 
 .card {
-  position: relative;
   cursor: pointer;
   height: 595px;
+  position: relative;
   overflow: hidden;
+  flex-wrap: wrap;
 }
 .card:hover .card__information {
   opacity: 1;
@@ -522,8 +515,15 @@
   opacity: 0;
   padding: 20px 40px;
   background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  max-height: 100%;
 }
 .card__title {
+  /* max-width: calc(100% - 254px);
+  min-width: 320px; */
+  height: 100%;
+  width: fit-content;
+  max-width: 260px;
   font-size: 30px;
   line-height: 43px;
   font-family: "Dela Gothic One", cursive;
@@ -533,21 +533,30 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
   gap: 14px;
+  flex-wrap: wrap;
 }
 .card__info {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-end; */
+  /* text-align: end; */
+  /* width: calc(40% - 7px); */
+  width: 224px;
+  font-size: 25px;
+  font-family: "Avrile Sans SemiBold";
+  text-transform: uppercase;
+  z-index: 5;
 }
 .card__time {
-  font-size: 25px;
-  line-height: 36px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  font-size: 24px;
   font-family: "Avrile Sans SemiBold";
+  text-transform: uppercase;
+  /*  line-height: 36px; */
+  letter-spacing: 0.04em;
+  word-break: keep-all;
+  white-space: nowrap;
 }
 .card__date {
   font-size: 25px;
@@ -598,7 +607,7 @@
 }
 
 .card__masterpieces-header {
-  width: 722px;
+  /* width: 722px; */
 }
 
 .card__masterpieces-title {
@@ -716,16 +725,15 @@
 }
 
 .footer__search {
+  display: flex;
+  height: 50px;
   background: rgba(247, 241, 227, 0.2);
-  position: relative;
 }
 
 .footer__search input {
+  font-family: "Avrile Sans Regular";
   transition: 0.3s ease-in-out;
   padding-left: 19px;
-  font-family: "Avrile Sans Regular";
-  width: 316px;
-  height: 49px;
   padding: 0 30px 0 20px;
   border: 1px solid #645845;
   outline: none;
@@ -734,6 +742,7 @@
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0.04em;
+  height: 100%;
 }
 .footer__search input:active, .footer__search input:hover, .footer__search input:focus {
   outline-offset: -10px;
@@ -746,11 +755,6 @@
 
 .footer__search button {
   transition: 0.3s;
-  position: absolute;
-  top: 0;
-  right: 0px;
-  width: 70px;
-  height: 50px;
   border: none;
   background: #26265a;
   border: 1px solid #645845;
@@ -1076,7 +1080,7 @@ body {
     right: 100%;
     z-index: 10;
     background-color: #1f1d1a;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     text-align: left;
     transition: 0.4s;
