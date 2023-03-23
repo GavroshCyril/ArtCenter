@@ -30,32 +30,32 @@
               <span class="bar"></span>
             </div>
 
-            <a class="logo" href="#">
-              <img
-                class="logo__link"
-                src="./images/art-center-logo.svg"
-                alt="Art Center"
-              />
-            </a>
+            <div class="logo__img">
+              <a class="logo__link" href="#">
+                <img src="./images/art-center-logo.svg" alt="Art Center" />
+              </a>
+            </div>
           </div>
 
-          <ul class="nav">
-            <li class="nav__item">
-              <a class="nav__link" href="#main">Main</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#events">Exhibitions and events</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#shop">Shop</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#contacts">Contacts</a>
-            </li>
-          </ul>
+          <div class="navbar">
+            <ul class="nav">
+              <li class="nav__item">
+                <a class="nav__link" href="#main">Main</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#events">Exhibitions and events</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#shop">Shop</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </div>
 
           <div class="links">
             <div class="icon">
@@ -136,40 +136,36 @@
           <div class="exhibitions__calendar">
             <img src="./images/Calendar.png" alt="Calendar" />
           </div>
-          <div class="cards__container">
-            <div class="card card__wrap card__masterpieces">
-              <div class="card__information">
-                <div class="card__header card__masterpieces-header">
-                  <h3 class="card__title card__masterpieces-title">
-                    Masterpieces of Impressionism
-                  </h3>
-                  <div class="card__info">
-                    <span class="card__date">Jan. 28 – Feb. 16</span>
-                    <span class="card__time">10:00 AM – 8:00 PM</span>
-                  </div>
+
+          <div class="card card__wrap card__masterpieces">
+            <div class="card__information">
+              <div class="card__header card__masterpieces-header">
+                <h3 class="card__title card__masterpieces-title">
+                  Masterpieces of Impressionism
+                </h3>
+                <div class="card__info">
+                  <span class="card__date">Jan. 28 – Feb. 16</span>
+                  <span class="card__time">10:00 AM – 8:00 PM</span>
                 </div>
-                <div class="card__footer">
-                  <a class="arrow" href="#">
-                    <svg
-                      width="50"
-                      height="28"
-                      viewBox="0 0 50 28"
+              </div>
+              <div class="card__footer">
+                <a class="arrow" href="#">
+                  <svg
+                    width="50"
+                    height="28"
+                    viewBox="0 0 50 28"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M36.2869 0L34.0598 2.22726L43.9706 12.1382H0V15.288H43.9706L34.0598 25.1988L36.2869 27.4261L50 13.713L36.2869 0Z"
                       fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M36.2869 0L34.0598 2.22726L43.9706 12.1382H0V15.288H43.9706L34.0598 25.1988L36.2869 27.4261L50 13.713L36.2869 0Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </a>
-                </div>
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="cards__container">
           <div class="card card__renaissance">
             <div class="card__information">
               <div class="card__header">
@@ -412,23 +408,29 @@
               </form>
             </div>
           </div>
-          <ul class="footer__links">
-            <li class="footer__link-item">
-              <a href="#main" class="footer__link">Main</a>
-            </li>
-            <li class="footer__link-item">
-              <a href="#events" class="footer__link">Exhibitions and events</a>
-            </li>
-            <li class="footer__link-item">
-              <a href="#gallery" class="footer__link">Gallery</a>
-            </li>
-            <li class="footer__link-item">
-              <a href="#shop" class="footer__link">Shop</a>
-            </li>
-            <li class="footer__link-item">
-              <a href="#contacts" class="footer__link">Contacts</a>
-            </li>
-          </ul>
+          <div class="footer__links-container">
+            <ul class="footer__links">
+              <li class="footer__link-item">
+                <a href="#main" class="footer__link">Main</a>
+              </li>
+              <li class="footer__link-item">
+                <a href="#events" class="footer__link"
+                  >Exhibitions and events</a
+                >
+              </li>
+            </ul>
+            <ul class="footer__links">
+              <li class="footer__link-item">
+                <a href="#gallery" class="footer__link">Gallery</a>
+              </li>
+              <li class="footer__link-item">
+                <a href="#shop" class="footer__link">Shop</a>
+              </li>
+              <li class="footer__link-item">
+                <a href="#contacts" class="footer__link">Contacts</a>
+              </li>
+            </ul>
+          </div>
           <div class="footer__contacts">
             <a class="footer__span">
               <svg

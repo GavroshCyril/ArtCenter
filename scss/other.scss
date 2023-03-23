@@ -16,18 +16,12 @@
 .card {
   position: relative;
   cursor: pointer;
-  width: 594px;
   height: 595px;
   overflow: hidden;
-  
+
   &:hover .card__information {
     opacity: 1;
     bottom: 0;
-    /* transform: translateY(-200px);
-    -webkit-transform: translateY(-200px);
-    -moz-transform: translateY(-200px);
-    -ms-transform: translateY(-200px);
-    -o-transform: translateY(-200px); */
   }
   &__information {
     position: absolute;
@@ -43,7 +37,6 @@
     font-size: 30px;
     line-height: 43px;
     font-family: $gothic;
-    width: 230px;
   }
   &__header {
     display: flex;
@@ -52,10 +45,8 @@
     align-items: center;
     padding: 0px;
     gap: 14px;
-    width: 514px;
   }
   &__info {
-    width: 260px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,7 +82,6 @@
       rgba(0, 0, 0, 0.3) 100%
     ),
     url(../images/ArtAndVineTasting.jpg) center no-repeat;
-  
 }
 
 .card__music {

@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@font-face {
+  font-family: "Avrile Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Regular"), url("../fonts/AvrileSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Medium"), url("../fonts/AvrileSans-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans SemiBold"), url("../fonts/AvrileSans-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Avrile Sans Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avrile Sans Bold"), url("../fonts/AvrileSans-Bold.woff") format("woff");
+}
+.joinUs {
+  padding-top: 180px;
+  margin-bottom: 180px;
+}
+.joinUs__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 134px;
+}
+.joinUs__paragraph {
+  max-width: 425px;
+}
+.joinUs__paragraph p {
+  font-size: 25px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  font-family: "Avrile Sans Regular";
+}
+.joinUs__form {
+  background: #f7f1e3;
+  border: 1px solid rgba(170, 166, 157, 0.2);
+  backdrop-filter: blur(30px);
+}
+.joinUs__form-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+  margin: 40px 30px 60px 30px;
+}
+.joinUs__input {
+  outline: none;
+  border: none;
+  width: 326px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 14px 20px 9px;
+  gap: 10px;
+  background: rgba(247, 241, 227, 0.2);
+  border-bottom: 1px solid #1f1d1a;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.04em;
+  color: #101010;
+  font-family: "Avrile Sans Regular";
+  transition: 0.3s;
+}
+.joinUs__input:active, .joinUs__input:focus {
+  outline-offset: -10px;
+  outline: 2px dashed #26265a;
+}
+.joinUs__input:hover, .joinUs__input:focus {
+  border-bottom: 1px solid transparent;
+}
+.joinUs__input::placeholder {
+  color: #101010;
+}
+.joinUs__button {
+  width: 326px;
+  height: 54px;
+  cursor: pointer;
+  background: #26265a;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f7f1e3;
+  font-family: "Dela Gothic One", cursive;
+  border: none;
+  transition: 0.3s;
+}
+.joinUs__button:hover {
+  background-color: #0e0e38;
+}/*# sourceMappingURL=joinus.css.map */

@@ -11,9 +11,8 @@
     padding: 0px;
     gap: 134px;
   }
-
   &__paragraph {
-    width: 426px;
+    max-width: 425px;
   }
   &__paragraph p {
     font-size: 25px;
@@ -22,18 +21,16 @@
     font-family: $AvrileSansRegular;
   }
   &__form {
-    width: 386px;
-    height: 232px;
     background: $grey;
     border: 1px solid rgba(170, 166, 157, 0.2);
     backdrop-filter: blur(30px);
   }
   &__form-container {
-    margin: 40px 30px 60px 30px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     gap: 30px;
+    margin: 40px 30px 60px 30px;
   }
   &__input {
     outline: none;

@@ -5,7 +5,23 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
-    gap: 30px;
+    gap: 30px 50px;
+    flex-wrap: wrap;
+
+    & > div:first-child {
+      width: calc(((100% - 30px) / 2) * 2);
+    }
+
+    & > div:nth-child(2) {
+      width: calc(((100% - 30px) / 3) * 2);
+    }
+
+    & > div:nth-child(3) {
+      width: calc(((100% - 30px) / 3) * 2);
+    }
+    & > div:last-child {
+      width: calc(((100% - 30px) / 2) * 2);
+    }
   }
   &__calendar {
     width: 386px;
@@ -53,6 +69,7 @@
 }
 
 .arrow svg:hover {
+  padding-right: 2px;
   color: $orange;
   transform: translateX(20px);
 }

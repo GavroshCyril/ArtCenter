@@ -33,9 +33,6 @@
   justify-content: space-between;
   gap: 134px;
 }
-.footer__news {
-  width: 386px;
-}
 .footer__desc {
   padding-top: 37px;
   padding-bottom: 20px;
@@ -46,6 +43,11 @@
 }
 .footer__paragraph span {
   font-family: "Avrile Sans SemiBold";
+}
+.footer__links-container {
+  gap: 18px;
+  display: flex;
+  flex-direction: column;
 }
 .footer__links {
   width: 178px;
@@ -79,7 +81,6 @@
   color: #ffb142;
 }
 .footer .footer__contacts {
-  width: 302px;
   height: 214px;
   display: flex;
   flex-direction: column;
