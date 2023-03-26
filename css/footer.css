@@ -81,7 +81,6 @@
   color: #ffb142;
 }
 .footer .footer__contacts {
-  height: 214px;
   display: flex;
   flex-direction: column;
   gap: 30px;

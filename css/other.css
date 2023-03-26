@@ -47,7 +47,7 @@
 }
 .card__information {
   position: absolute;
-  bottom: -28%;
+  bottom: -40%;
   left: 0;
   margin: 0;
   transition: 0.3s;
@@ -58,8 +58,6 @@
   max-height: 100%;
 }
 .card__title {
-  /* max-width: calc(100% - 254px);
-  min-width: 320px; */
   height: 100%;
   width: fit-content;
   max-width: 260px;
@@ -76,12 +74,6 @@
   flex-wrap: wrap;
 }
 .card__info {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end; */
-  /* text-align: end; */
-  /* width: calc(40% - 7px); */
   width: 224px;
   font-size: 25px;
   font-family: "Avrile Sans SemiBold";
@@ -92,7 +84,6 @@
   font-size: 24px;
   font-family: "Avrile Sans SemiBold";
   text-transform: uppercase;
-  /*  line-height: 36px; */
   letter-spacing: 0.04em;
   word-break: keep-all;
   white-space: nowrap;
