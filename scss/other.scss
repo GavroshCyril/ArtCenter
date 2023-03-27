@@ -16,7 +16,6 @@
 .card {
   cursor: pointer;
   height: 595px;
-  position: relative;
   overflow: hidden;
   flex-wrap: wrap;
 
@@ -54,10 +53,8 @@
   }
   &__info {
     width: 224px;
-    font-size: 25px;
     font-family: $AvrileSansSemiBold;
     text-transform: uppercase;
-    z-index: 5;
   }
   &__time {
     font-size: 24px;

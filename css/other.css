@@ -37,7 +37,6 @@
 .card {
   cursor: pointer;
   height: 595px;
-  position: relative;
   overflow: hidden;
   flex-wrap: wrap;
 }
@@ -75,10 +74,8 @@
 }
 .card__info {
   width: 224px;
-  font-size: 25px;
   font-family: "Avrile Sans SemiBold";
   text-transform: uppercase;
-  z-index: 5;
 }
 .card__time {
   font-size: 24px;

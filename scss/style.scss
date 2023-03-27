@@ -143,7 +143,7 @@ body {
   }
 
   .footer__img {
-    width: 80px;
+    width: 90px;
     height: 66px;
   }
 
@@ -477,18 +477,6 @@ body {
     border-bottom: 1px solid transparent;
   }
 
-  /*   .main .main__title {
-    font-size: 72px;
-  } */
-
-  /* .main__span-info {
-    top: 118px;
-  } */
-
-  /* .main__picture {
-    height: 342px;
-  } */
-
   .card {
     height: 416px;
   }
@@ -507,6 +495,12 @@ body {
     padding-top: 78px;
     margin-bottom: 78px;
   }
+  /* .card {
+    &__date + &__time {
+      font-size: 22px;
+      line-height: 0;
+    }
+  } */
 }
 
 @media screen and (max-width: 980px) {
